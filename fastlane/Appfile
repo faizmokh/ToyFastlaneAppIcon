@@ -1,7 +1,3 @@
-app_identifier "com.faizmokhtar.toyfastlaneappicon.alpha" # The bundle identifier of your app
-apple_id "Apple's email address" # Your Apple email address
-
-team_id "Apple's team ID" # Developer Portal Team ID
-
-# you can even provide different app identifiers, Apple IDs and team names per lane:
-# More information: https://docs.fastlane.tools/advanced/#appfile
+app_identifier "com.faizmokhtar.toyfastlaneappicon.alpha"
+apple_id ENV["FAIZ_APPLE_ID"] # Your Apple email address
+team_id ENV["FAIZ_TEAM_ID"] # Developer Portal Team ID
