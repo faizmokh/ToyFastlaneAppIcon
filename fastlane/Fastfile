@@ -1,0 +1,31 @@
+# Customize this file, documentation can be found here:
+# https://docs.fastlane.tools/actions/
+# All available actions: https://docs.fastlane.tools/actions
+# can also be listed using the `fastlane actions` command
+
+fastlane_version "2.66.2"
+
+default_platform :ios
+
+platform :ios do
+  before_all do
+  end
+
+  desc "Create a new Alpha build"
+  lane :alpha do
+  end
+
+  desc "Create a new Beta build"
+  lane :beta do
+  end
+
+  desc "Create a new App Store build"
+  lane :store do
+  end
+
+  after_all do |lane|
+  end
+
+  error do |lane, exception|
+  end
+end
