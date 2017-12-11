@@ -3,14 +3,14 @@ team_id ENV["FAIZ_TEAM_ID"] # Developer Portal Team ID
 
 for_platform :ios do
   for_lane :alpha do
-    app_identifier: "com.faizmokhtar.toyfastlaneappicon.alpha"
+    app_identifier "com.faizmokhtar.toyfastlaneappicon.alpha"
   end
 
   for_lane :beta do
-    app_identifier: "com.faizmokhtar.toyfastlaneappicon.beta"
+    app_identifier "com.faizmokhtar.toyfastlaneappicon.beta"
   end
 
   for_lane :store do
-    app_identifier: "com.faizmokhtar.toyfastlaneappicon"
+    app_identifier "com.faizmokhtar.toyfastlaneappicon"
   end
 end
