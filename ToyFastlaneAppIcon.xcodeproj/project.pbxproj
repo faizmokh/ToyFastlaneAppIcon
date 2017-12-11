@@ -279,7 +279,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ToyFastlaneAppIcon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.faizmokhtar.ToyFastlaneAppIcon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.faizmokhtar.toyfastlaneappicon.alpha;
 				PRODUCT_NAME = "🚀 Alpha";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -293,7 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ToyFastlaneAppIcon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.faizmokhtar.ToyFastlaneAppIcon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.faizmokhtar.toyfastlaneappicon.alpha;
 				PRODUCT_NAME = "🚀 Alpha";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -365,7 +365,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ToyFastlaneAppIcon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.faizmokhtar.ToyFastlaneAppIcon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.faizmokhtar.toyfastlaneappicon.beta;
 				PRODUCT_NAME = "🚀 Beta";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -430,7 +430,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ToyFastlaneAppIcon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.faizmokhtar.ToyFastlaneAppIcon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.faizmokhtar.toyfastlaneappicon;
 				PRODUCT_NAME = "🚀";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -495,7 +495,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ToyFastlaneAppIcon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.faizmokhtar.ToyFastlaneAppIcon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.faizmokhtar.toyfastlaneappicon.beta;
 				PRODUCT_NAME = "🚀 Beta";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
