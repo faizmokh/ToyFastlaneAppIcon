@@ -22,7 +22,11 @@ platform :ios do
       force: true,
       adhoc: true
     )
-    add_badge_to_icon    
+    add_badge_to_icon
+    gym(
+      scheme: "ToyFastlaneAppIcon Alpha",
+      clean: true
+    )
   end
 
   desc "Create a new Beta build"
@@ -32,7 +36,11 @@ platform :ios do
       force: true,
       adhoc: true
     )
-    add_badge_to_icon    
+    add_badge_to_icon
+    gym(
+      scheme: "ToyFastlaneAppIcon Alpha",
+      clean: true
+    )   
   end
 
   desc "Create a new App Store build"
