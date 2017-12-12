@@ -17,10 +17,12 @@ platform :ios do
 
   desc "Create a new Alpha build"
   lane :alpha do
+    add_badge_to_icon    
   end
 
   desc "Create a new Beta build"
   lane :beta do
+    add_badge_to_icon    
   end
 
   desc "Create a new App Store build"
@@ -31,5 +33,14 @@ platform :ios do
   end
 
   error do |lane, exception|
+  end
+
+  private_lane :add_badge_to_icon do
+    version_number = lane_context[SharedValues::VERSION_NUMBER]
+    build_number = lane_context[SharedValues::BUILD_NUMBER]
+    add_badge(
+      shield: "#{version_number}-#{build_number}-orange", 
+      no_badge: true,
+    )
   end
 end
