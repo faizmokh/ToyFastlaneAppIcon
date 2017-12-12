@@ -17,11 +17,21 @@ platform :ios do
 
   desc "Create a new Alpha build"
   lane :alpha do
+    cert
+    sigh(
+      force: true,
+      adhoc: true
+    )
     add_badge_to_icon    
   end
 
   desc "Create a new Beta build"
   lane :beta do
+    cert
+    sigh(
+      force: true,
+      adhoc: true
+    )
     add_badge_to_icon    
   end
 
