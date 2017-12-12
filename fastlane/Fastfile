@@ -28,7 +28,7 @@ platform :ios do
       scheme: "ToyFastlaneAppIcon Alpha",
       clean: true
     )
-    pilot
+    upload_to_testflight
   end
 
   desc "Create a new Beta build"
@@ -43,7 +43,7 @@ platform :ios do
       scheme: "ToyFastlaneAppIcon Alpha",
       clean: true
     )   
-    pilot
+    upload_to_testflight
   end
 
   desc "Create a new App Store build"
