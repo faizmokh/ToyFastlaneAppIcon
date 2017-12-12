@@ -287,7 +287,7 @@
 				PROVISIONING_PROFILE = "2790ce6e-3a19-47eb-8736-bace214e4de9";
 				PROVISIONING_PROFILE_SPECIFIER = "com.faizmokhtar.toyfastlaneappicon.alpha AdHoc";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -307,7 +307,7 @@
 				PROVISIONING_PROFILE = "2790ce6e-3a19-47eb-8736-bace214e4de9";
 				PROVISIONING_PROFILE_SPECIFIER = "com.faizmokhtar.toyfastlaneappicon.alpha AdHoc";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -383,7 +383,7 @@
 				PRODUCT_NAME = "🚀 Beta";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = "Debug Staging";
@@ -452,7 +452,7 @@
 				PRODUCT_NAME = "🚀";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = "App Store";
@@ -521,7 +521,7 @@
 				PRODUCT_NAME = "🚀 Beta";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = "Release Staging";
