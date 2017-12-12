@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9855BA8A1FDE8AFA00E98A1F"
-               BuildableName = "ToyFastlaneAppIcon.app"
+               BuildableName = "&#x1f680; Alpha.app"
                BlueprintName = "ToyFastlaneAppIcon"
                ReferencedContainer = "container:ToyFastlaneAppIcon.xcodeproj">
             </BuildableReference>
@@ -34,7 +34,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9855BA8A1FDE8AFA00E98A1F"
-            BuildableName = "ToyFastlaneAppIcon.app"
+            BuildableName = "&#x1f680; Alpha.app"
             BlueprintName = "ToyFastlaneAppIcon"
             ReferencedContainer = "container:ToyFastlaneAppIcon.xcodeproj">
          </BuildableReference>
@@ -58,7 +58,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9855BA8A1FDE8AFA00E98A1F"
-            BuildableName = "ToyFastlaneAppIcon.app"
+            BuildableName = "&#x1f680; Alpha.app"
             BlueprintName = "ToyFastlaneAppIcon"
             ReferencedContainer = "container:ToyFastlaneAppIcon.xcodeproj">
          </BuildableReference>
@@ -77,7 +77,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9855BA8A1FDE8AFA00E98A1F"
-            BuildableName = "ToyFastlaneAppIcon.app"
+            BuildableName = "&#x1f680; Alpha.app"
             BlueprintName = "ToyFastlaneAppIcon"
             ReferencedContainer = "container:ToyFastlaneAppIcon.xcodeproj">
          </BuildableReference>
