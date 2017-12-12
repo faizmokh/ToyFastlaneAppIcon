@@ -30,6 +30,7 @@ platform :ios do
   end
 
   after_all do |lane|
+    reset_git_repo
   end
 
   error do |lane, exception|
