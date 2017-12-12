@@ -6,6 +6,7 @@
 fastlane_version "2.66.2"
 
 default_platform :ios
+xcversion(version: "9.2")
 
 platform :ios do
   before_all do
@@ -17,12 +18,32 @@ platform :ios do
 
   desc "Create a new Alpha build"
   lane :alpha do
-    add_badge_to_icon    
+    cert
+    sigh(
+      force: true,
+      adhoc: true
+    )
+    add_badge_to_icon
+    gym(
+      scheme: "ToyFastlaneAppIcon Alpha",
+      clean: true
+    )
+    upload_to_testflight
   end
 
   desc "Create a new Beta build"
   lane :beta do
-    add_badge_to_icon    
+    cert
+    sigh(
+      force: true,
+      adhoc: true
+    )
+    add_badge_to_icon
+    gym(
+      scheme: "ToyFastlaneAppIcon Alpha",
+      clean: true
+    )   
+    upload_to_testflight
   end
 
   desc "Create a new App Store build"
@@ -30,6 +51,7 @@ platform :ios do
   end
 
   after_all do |lane|
+    clean_build_artifacts
     reset_git_repo
   end
 
