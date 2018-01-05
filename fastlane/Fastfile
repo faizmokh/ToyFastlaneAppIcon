@@ -23,7 +23,7 @@ platform :ios do
       force: true,
       adhoc: true
     )
-    add_badge_to_icon
+    add_badge_to_icon(release: "alpha")
     gym(
       scheme: "ToyFastlaneAppIcon Alpha",
       clean: true
@@ -38,7 +38,7 @@ platform :ios do
       force: true,
       adhoc: true
     )
-    add_badge_to_icon
+    add_badge_to_icon(release: "beta")
     gym(
       scheme: "ToyFastlaneAppIcon Alpha",
       clean: true
@@ -58,12 +58,20 @@ platform :ios do
   error do |lane, exception|
   end
 
-  private_lane :add_badge_to_icon do
+  private_lane :add_badge_to_icon do |options|
     version_number = lane_context[SharedValues::VERSION_NUMBER]
     build_number = lane_context[SharedValues::BUILD_NUMBER]
-    add_badge(
-      shield: "#{version_number}-#{build_number}-orange", 
-      no_badge: true,
-    )
+    if options[:release] == "alpha"
+      add_badge(
+        shield: "#{version_number}-#{build_number}-orange", 
+        no_badge: false,
+        alpha: true,
+      )  
+    elsif options[:release] == "beta"
+      add_badge(
+        shield: "#{version_number}-#{build_number}-orange", 
+        no_badge: false,
+      )  
+    end
   end
 end
