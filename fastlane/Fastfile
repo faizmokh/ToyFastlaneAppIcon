@@ -1,0 +1,77 @@
+# Customize this file, documentation can be found here:
+# https://docs.fastlane.tools/actions/
+# All available actions: https://docs.fastlane.tools/actions
+# can also be listed using the `fastlane actions` command
+
+fastlane_version "2.66.2"
+
+default_platform :ios
+xcversion(version: "9.2")
+
+platform :ios do
+  before_all do
+    ensure_git_status_clean    
+    version_number = get_version_number(xcodeproj: "ToyFastlaneAppIcon.xcodeproj")   
+    build_number = number_of_commits(all: true)    
+    increment_build_number(build_number: build_number)    
+  end
+
+  desc "Create a new Alpha build"
+  lane :alpha do
+    cert
+    sigh(
+      force: true,
+      adhoc: true
+    )
+    add_badge_to_icon(release: "alpha")
+    gym(
+      scheme: "ToyFastlaneAppIcon Alpha",
+      clean: true
+    )
+    upload_to_testflight
+  end
+
+  desc "Create a new Beta build"
+  lane :beta do
+    cert
+    sigh(
+      force: true,
+      adhoc: true
+    )
+    add_badge_to_icon(release: "beta")
+    gym(
+      scheme: "ToyFastlaneAppIcon Alpha",
+      clean: true
+    )   
+    upload_to_testflight
+  end
+
+  desc "Create a new App Store build"
+  lane :store do
+  end
+
+  after_all do |lane|
+    clean_build_artifacts
+    reset_git_repo
+  end
+
+  error do |lane, exception|
+  end
+
+  private_lane :add_badge_to_icon do |options|
+    version_number = lane_context[SharedValues::VERSION_NUMBER]
+    build_number = lane_context[SharedValues::BUILD_NUMBER]
+    if options[:release] == "alpha"
+      add_badge(
+        shield: "#{version_number}-#{build_number}-orange", 
+        no_badge: false,
+        alpha: true,
+      )  
+    elsif options[:release] == "beta"
+      add_badge(
+        shield: "#{version_number}-#{build_number}-orange", 
+        no_badge: false,
+      )  
+    end
+  end
+end
